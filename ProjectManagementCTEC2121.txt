@@ -1,0 +1,220 @@
+
+Mon  3 Oct 10:04:42 BST 2016
+
+	Assignment 1, 33% of module, group written paper plus presentation
+
+	Topics and groups to be finalised by week 3
+
+	Topic must be relevant to course, preferably an area with which we are not familiar
+	Accademic paper, small scope
+
+	Litterature survey of field expected
+	Topics not limited to computer security?
+	
+	paper due week 15, presentations in week 16
+	hard copy to FOTAC, digital copy to turnitin
+	
+	Marking scheme to be posted
+	
+	doccumenting progress not nessesary, but suggested. Blogs, journals etc.
+	Gantt chart?
+
+	NO PLAGURISM!!!1!
+
+	questionaire expected
+
+	1000 words per student expected 
+	
+	TOPIC - VR:
+		Possible applications(Gaming, medical, simulation, design etc.)
+		Cost effectiveness per application
+		General opinion questionaire 		
+
+
+
+Tue  4 Oct 12:03:02 BST 2016
+
+	Compare between nations for any given topic?
+
+	What is research?
+		Systematic investigation into the study of a field
+		Discover new facts, collate old facts
+		
+		Start with a question or problem to solve (Hypothesis)
+			Usually involves manipulation of independant variables to bring about changes in 
+			dependant variables
+			Problem/Question must be specific
+			vaugity leads to unfocussed work
+
+		Answers may seem obvious, but even an obvious point is worth proving
+		Problem must be submitted to rigourous scientific scrutiny, else only guesses remain
+		Don't assume common sense/common knowledge
+		Don't assume, period
+
+	Negative resulults still valuable
+	Specifics and details EXTREMELY important
+
+		
+	1 - Statement of problem
+	2 - Literature Review
+	3 - Choice of research Method
+	4 - Design Study
+	5 - Data Collection
+	6 - Analysis of data
+	7 - Write Up
+
+	Make notes of sources. Biblography is important, details of sources are nessesary
+
+Tue 11 Oct 12:08:26 BST 2016
+
+	Bias is inherant to most studies; acknowledge where bias may occur and account for it in your conclusion.
+	Even an inconclusive study is a valid one.
+
+	Write abstract last, put it first
+
+	the first thing the examiners look at is the title, abstract, then references! References are super important.
+	Ensure a wide variety of credible resources as it is important for first impressions
+
+	literiture review can be main method of chosen methodology. Subhead different sections to improve clarity
+	when large amounts of litterature are being referenced
+
+	Review articles/Meta analysis are very useful, look out for them
+
+	example annoteded research paper availible on blackboard
+
+
+Mon 24 Oct 10:35:07 BST 2016
+	
+	VR Notes:
+		Historical
+			http://www.vrs.org.uk/virtual-reality/history.html
+				1838 - Stereoscopic Photos/Viewers
+				1929 - First Flight Sim
+					Link Trainer
+					Edward link
+					entirely electromechanical
+					used during WWII by 500000 pilots
+				1930s - VR Predicted in SciFi
+					Pygmalion's Spectacles - Stanley G. Weinbaum
+				1950s - Morton Heilig's Sensorama
+				1960 - First head mounted display - Teleshpere Mask
+				1965 - Ivan Sutherland describes "The Ultimate Display"
+					HMD used to achieve maximum immersion
+					computer hardware used to maintain virtual world
+					ability to interact with virtual objects in a realistic manner
+				1968 - Sword of Damocles - First HMD connected to a computer rather than a camera
+					Suspended from the cieling
+					primitive wireframe graphics
+				1969 - Myron Kruegere's Artificial Reality
+				1987 - 'Virtual Reality' coined as a term
+					Jaron Lanier founded the Visual Programming Lab (VPL)
+					Developed dataglove along with Tom Zimmerman
+					Developed the EyePhone HMD
+					First production vr goggles (EyePhone 1, $9400, EyePhone HRX, $49000)
+					Major developments into haptics, developed gloves ($9000)
+				1991 - Virtuality Group Arcade machines
+					large arcade machines allowed first real public access to VR
+					realtime CG Visuals (Less than 50ms latency)
+					Networked multi-player
+				1992 - The Lawnmower Man movie
+					wide audiance introduced to the concept of VR
+					drew inspiration from VPL and Jaron Lanier
+				1993 - SEGA VR Headset announced
+
+Tue 25 Oct 12:13:11 BST 2016
+
+	ontology
+		realism vs relativism
+			[look this up]
+	
+	Epistemology
+		Positivism or Realism
+			observer independent
+			explaining
+			empirical
+
+			Quantitative
+			Objective 
+			Questions
+				what? when? how much?
+			deductive
+			[fact based]
+
+		Interperativism or Constructionism
+			observer dependednt
+			understanding
+			hermeneutic
+				interperating texts and comunications [neat!]
+
+			Subjective
+			Qualitative
+			Questions
+				Why? How?
+			Discover meaning
+			context, social element
+			inductive
+			[people rather than facts]
+
+		Pragmatism
+			balanced approach
+			results focussed
+			questions
+				who? what? when? where? why? how?
+			deductive and inductive
+
+
+	The scientific method
+		Question > Research > Hypothesis > Experiment > Analysis > Results
+
+	Quantitative
+		Questionairs, experiments
+		numbers, unbiased facts, totally objective 
+		deductive ( General > specific, top down)
+			Using large sampes of general facts to make specific conclusions
+	Inductive
+		Interviews, narrative, observations, ethnography [?]
+		open ended questions, subjective
+		can be biased [!]
+		inductive (Specific > general, bottom up)
+			generalising from specific instances
+	
+	methods
+		feasability study (is it possible?)
+
+		comparitative study (is it better?)
+
+		observational study (what is it?)
+			Study system use/performance
+			User testing, AB testing, UX feedback
+			usability, accessability
+
+		literature survey (what is known about it?)
+			[lots of reading!]
+
+		formal method (abstration)
+			logic, math, algorithms, complexity, proofs
+			Specification, verification
+			model checking, theorem proving
+
+		simulation (what if?)
+			real world phenomenon > abstract computer simulations
+			constants, variables, rules, probabilities
+				weather prediction, flocking
+		
+		Experimentation/implementation
+			testing for correctness
+			evaluating any given system
+			parameters, input > process > output (IPO)
+			prototyping
+
+	
+Tue 15 Nov 12:08:21 GMT 2016
+
+	Analysing Data
+		How many results?
+		Where from?
+		How did you get them? (Digital, paper etc.
+		When did you get them?
+		
+		These things need describing as part of the methodology section of the paper
+		Create a spreadsheet/table of results

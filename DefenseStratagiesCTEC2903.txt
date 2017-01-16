@@ -1,0 +1,563 @@
+
+Mon 10 Oct 11:03:50 BST 2016
+
+	have clear definitions of roles when it comes to security policies
+	ensure documents cross reference each other
+
+	iso 27001
+		define a framework for controls & objectives
+		definition of responsibilities
+		importance of compliance, awareness and education
+
+		internal organisation
+			adequacy of security controls
+			contact with authorities
+			contact with special interest group
+		
+		External parties
+			control in place for sensitive info access
+			contractual obligations
+			personel identification
+			communication of security policies
+
+		Asset management
+			responsibility for assets
+				asset registration
+				asset owner
+				acceptable use of asset
+			Information Classification
+				classification in terms of values, sensitivity level, criticality
+				avoid over calssification
+
+			assests include tangible and intangible assets, including staff, intelectual property,
+			hardware, and software
+
+		HM Government Approach
+			CIA Triad:
+				Confidentiality
+					the restriction of inforamtion to those authorized to recieve it
+				Integrity
+					ensuring information remains tamper free and accurate	
+				Availibility
+					ensuring all who have access to informtion can access it easily
+
+		HR Security
+			Insider risk?
+				60-70% of all incidents arise from insiders
+
+				Includes both intentially malicious acts or by human error
+					overworked staff
+					poorly trained staff
+
+			Two cultures; Humanities vs Sciences
+
+			HR Concerns
+				prior to employment
+					job description; roles and responsibilities must be clear
+					adequate screening
+					background checks
+				during employment
+					take responsibilities and reduce human error
+					ensure adequate training
+
+				termination or change of employment
+					ensure return of assets
+					remove unessesary access
+
+		Physical and Environmental Security
+			Secure area
+				no gaps in areas where breakins can occur
+				restricted to authorised personel
+				fire doors alarmed and monitored
+				suitable intrusion detection systems
+			
+			Equipment Security
+				supporting utilities e.g. UPS
+				Disposal or reuse of equipment
+				removal of property
+`
+		Communications and operations management
+			operational procedures and responsibilities
+			third party sevice delivery management
+			system planning and acceptance
+			protection against malicious and mobile code
+			back-up
+			media handling
+			exchange of information
+			electronic commerce services
+			monitoring
+
+		Incident management
+			reporting incident security events and weaknesses
+			management of information security incidents and imporvements
+
+			assess severity level
+			escalate appropriotly
+			damage limitation
+			erradication, containment, recovery
+			reassess situation
+			followup
+
+			implement any changes to be made by beginning to security policy preparation lifecycle once more
+
+			business continuity management
+				information security aspects of business continuity management
+					tabletop exercise - go through scenarios in a simulated environment
+
+		Compliance
+			compliance with legal requirements
+			compliance with security policies and standards, and technical compliance
+			information systems audit considerations
+
+		Access Controls
+			business requirements for access controls
+			user access management
+			user responsibilities
+			network access control
+			operating system access controls
+			application and information access controls
+			mobile computing and teleworking
+
+		The Complexity Problem
+			In an interconnected and complex network of devices and systems, how do we ensure tha
+			security incidents in one element do not affect operation of other systems?
+
+		The Emergancy Problem
+			In the event of a sersious incident, how do we react in an emergant manner?
+
+		Information systems aquisition, development and maintenance
+			security requirements for information systems
+			correct processing in applications
+			cryptographic controls
+			security of system files
+			security in developemnt and support proccesses
+			technical vulnerability management
+
+		The PDSA Cycle
+			plan
+				establish objectives
+				planning
+			do
+				implement the plan
+				execute the proccess
+			study
+				measure
+				monitor
+			act
+				Correct actions taken correctly
+
+Mon 17 Oct 11:07:01 BST 2016
+
+	threat actors
+		individuals or groups that can manifest a threat
+			internal/external
+		consider capabilities, motives etc.
+
+		examples:
+			cybercriminals
+			online social hackers
+			hacktivists
+			nation states
+			corporations
+			employees
+			cyber fighters		}
+			cyber terrorists	} ?
+
+	attack vectors
+		attack vector is a path or tool that a threat actor usues to gain access to a system to assist in achieving
+		their desired outcome
+
+	Decribing cyber attacks
+		an asset
+		its vulns/weaknesses	}
+		the techniques		}	attack vector
+		the consequences
+
+	The emergant threat landscape
+		Cyber physical systems (CPT) = critical national infrastructure
+			power
+			healthcare
+			industry
+			manurfacturing
+			transportation
+			telecomunications
+		areas of interest
+			IT & Physical world
+			safety and security
+			vunerability analysis
+			threat modelling
+			intrustion detection
+			adaptive mitigation
+			forensics
+		social media
+			abuse of information leakage
+				datamining from availibile open source information
+			social engineering
+				personal information sharing
+				phishing attacks
+				fake trust within social media
+		cloud computing
+			-cloud based computing brings additional risks
+			-the mobility of content makes it difficult to locate, isolate and block malicious content
+			-the ingerant complexability brings further issues
+				human error
+				misconfigs
+				insider threat
+		internet of things
+			increased complexity of interconnecte devices
+			smart environments are tightly related to personal profiles
+			interactionas between networked and physical space create new threats and vulns
+			weak security controls due to cost restraints
+		big data
+			SIEM data sources (Security information and Event Management)
+				log alert and incident information
+				configs, audit trails, web info, dark web
+			timely threat patterns spor and near-time responses
+			big data privacy concerns
+
+	QUIZ
+		What is a threat landscape?
+			a threat landscape is the full spectrum of threats that may affect a given asset
+		What is a threat actor?
+			a threat actor is an individual or group that may manifest a threat
+		Name six attack vectors
+			SQL Injection, Blackmail, Trojan Malware, DDoS, XSS, Bugs (EG Buffer overflow)
+
+	Componants of IT Infrastructure
+
+		OS Platforms
+			Platforms for clients
+				windows
+					95% of PC Market
+			Platforms for servers
+				Linux
+		Enterprise
+			SAP
+			Oracle
+			peoplesoft (Now Oracle)
+			Siebel
+			Middleware software
+
+Mon 24 Oct 11:01:44 BST 2016
+
+	Read Message	Intercept message	MITM network traffic
+			
+			Gain Access to Sender	Keylogger
+						Filesystem Access
+			
+			Gain Access to Reciever	Filesystem Access
+
+			Read over shoulder (Physical space)
+
+
+Mon 14 Nov 11:01:55 GMT 2016
+
+	Security Operations Centre
+
+	New business models and technologies increased the need for digital security expertise
+	more data being stored
+
+	attacks are becoming more frequent, increased number of APTs
+	
+	evolving regulations
+
+	numerours defence solutions are availible, often requiring a combination of controls that requires 
+	increased expertise to maintain
+
+	why do you need an SOC?
+
+		firewalls and IDS are not enough
+
+		need a nuccleus of all security information
+
+		move from reactive to proactive
+			continuous prevention
+			protection
+			detection
+			response capabilities
+
+		coordinate incident response
+		increase visibility
+
+	SIM tools
+
+		Security Information Management tools
+			aggregate and analyse data intellegently
+			provides visulaisation of the cyber environment
+
+		SIM Functionalities
+			track and escalate per threat levels
+			priority determination
+			realtime cross device analsis and aggregation
+			audit and compliance
+			SIM  needs to be flexible
+
+			SIM tools are not enough, human analysis and decision making still required
+
+	outsourced vs in house
+
+		outsourced
+			Symantec, secureworks, solutionary, wipro, tata, enturylink etc.
+
+		SOC Domains
+			people
+				do you need 24x7x365?
+				skill sets
+				training
+				metrics to measure performance
+				capacity planning
+			process
+				what does the plan look like
+				how do we measure goals?
+				what is the optimal design of core processes?
+				process and continual improvement
+			technology
+				SIEM Achetecture
+				log types and options
+				platform integrations; ticketins governance and big data
+			governance
+
+		
+Mon 21 Nov 11:03:31 GMT 2016
+
+	Kil Chain Analysis
+
+		Reconnaisance
+			Search through Open Source, social media
+
+		Weaponisation
+			Attacker develops malicious payloads
+			Attackers develop or aquire payloads
+		Delivery
+			social engineering
+			network based attacks
+			physical access
+
+		Exploitation
+			Triggers the intruders code
+			application/OS vlunerabilities
+			users may be used to execute code
+
+		Installation
+			creating backdoors to allow attacker to maintain distance
+
+		Command & Control
+			channels are online and allow the attacker to issue commands
+
+		Actions on objectives
+			attacker takes actions in order to achieve original objective
+
+	Killing the Kill chain
+
+		Recon and weaponisation
+			asset management - inventory systems
+			infrastructure and data security
+			training - awareness and education
+		
+		Delivery
+			Email and web filtering
+			system port control
+
+		Exploitation and installation
+			application whitelisting
+			privilidged identity management
+
+		Command and control
+			network monitoring
+			traffic pattern analysis
+
+		actions on intent 
+			outbound traffic monitoring
+			anomaly detection
+
+		[Countering the Advanced Persistant Threat Challenge with Deep Discovery]
+	
+		[stixproject.github]
+
+		
+Mon  5 Dec 11:02:23 GMT 2016
+
+	Coursework: do a pentest, blackbox test, given vulnerable machine to test and write up report
+	Lab sessions are netkit based [probably time to sort out kali...] 
+
+	explain difference between staeless and statefull
+
+	Firewalls
+		impementing some kind of firewall at the edge of the network is essential
+
+		firewalls lead to fortress mentality, becomes sole point of failure
+		
+		firewalls have their place, but they are most likely going to be relied on less and less [IDS and other such
+		solutions are probably more relevant and useful]
+
+		firewall: software that inspects network traffic at the gateway to a network
+			
+			often running on dedicated hardware
+			
+			use rules to determine whether packets should be accepted or rejected
+
+			trade network flexability for aditional security [not toatal security, firewalls are often 
+			either very flawed or very inconvenient]
+
+		First rules to consider are the business rules; when do you need to let people in?
+
+	[University IP address: 146.227.160.79]
+	[Interesting note, geolocated in the middle of the thames... seems familiar, look that up]
+
+	DMZs
+		DMZs allow easier internet access for allocated machines; inclusive versus exclusive
+		
+		Servers in these zones are at greater risk
+			use another firewall with a looser set of rules
+
+		Internal network [inc database servers] > Firewall > DMZ (Web, mail, dns etc.) > Firewall > Router
+
+	Specialist: mod_security
+		- firewalll for http requests running on webserver
+		- protection from range of attacks
+		- traffic monitoring and real-time analysis
+		- JIT patching
+		- DOES HAVE KNOWN WEAKNESSES
+	
+	Packet Filtering
+		- Original firewall software 
+		- Reads network and IP layer packet headers
+			- Source/Dest. IP addresses
+			- Protocol
+			- Ports
+		- Packet by packet basis
+
+	Stateful inspection
+		- Maintains state table with information
+		- uses transport layer sequence numbers of datagrams
+		- saves substantial amounts of time, rule sets can be extensive and massive
+		- initial packet of session checked
+			subsequent packets are only checked to see if they are part of the same session once a session
+			is trusted
+		SYN Sessions
+			- sessions are detected using the SYN bit in the datagram
+			- existing sessions will timeout, tables will purge
+			- common DoS attacks include SYN flooding
+	
+	Firewall rules
+		- firewalls come with default rules, usually inclusive or exclusive
+		- there is an order to rules
+			- packets are tested in order [kinda cascading?]
+
+		Netfilter
+			- framework that provide hooks and interface for tools such as iptables which reside in userspace
+			- when a packet comes in over an interface, it is netfilter that is first notified
+
+		[cheap laptops make perfectly servicable firewall machines]
+
+
+	Tables
+		- four different tables attatched to hooks
+			- Mangle, nat, filter, raw
+	Chains
+		- sequences of rules attached to certain kinds of proccessing
+		- availible online as packages, not nessecerily trustworthy but can save time and effort
+		- each chain has a default policy
+
+	Rules
+		- comprised of matches and targets
+			- If it matches, what happens?
+		- logs are kept per rule:
+			- packet counter
+			- byte counter
+		EG: iptables -t nat -A PREROUTING -i eth1 -p tcp --deport 80 -j DNAT --to-destination 192.168.xxx.xxx
+
+	[Look up packet flow diagrams and examples]
+
+	[check wiki for things like Firewalls, DMZs, packet filtering, stateful inspection, netfilter componants etc.]
+
+	[warriors of the .net]
+
+
+Mon 12 Dec 10:59:47 GMT 2016
+
+	Connection tracking
+		allows the kernal to keep track of logical network sessions
+		NAT relies on this (?)
+
+	ConnTrack
+		Each netfilter connection is uniquely identified by a tuple
+		layer 4 key depends on transport protocols
+		packets will be mandatorily defragmented
+
+		first packet is new
+		the reply is classified establihed
+		and ICMP error is related
+		and unmatched ICMP error is invalid
+
+		untracked is also an option
+
+		conntack is part of IP Tables, other applications exist with better interfaces
+
+	IDS
+		monitors network traffic
+		monitors for suspicious/anomalous activity by first establishing a basline level
+		may take actions such as blocking users or IP addresses as well as notifying sysadmins
+		
+		There are many types of IDS
+
+		NIDS
+			- Network intrustion detection systems
+			- placed at a strategic point or points within the network to monitor traffic to and from
+			all devices in the netwrok
+			- ideally monitoring all inbound and outbound traffic
+
+		HIDS
+			- host intrusion detetion
+			- monitors a single host
+
+		Signature Based
+			- compare traffic to known signatures
+
+		Passive IDS
+			- simply detects and alerts
+			- generates alerts for admins who are responsible for dealing with the issue
+
+		Reactive IDS
+			- will take pre-defined proactive measures to respond to detected threats
+			- typically means blocking traffic from a particular user or IP address
+			( can be prone to false positives, and, as a result, pissed off users )
+
+	DarkTrace
+		- No rules or signitures
+		- machine learning
+		- real time threat detection
+		- checks inbound and outbound
+		- reverse baynesian analysis [?]
+		- expensive ($5000 pcm starting price)
+		
+		[http://www.darktrace.com/technology]
+
+	IPS
+		- Like combining an IDS with a firewall
+		- an IPS has policies and rules that it compares network traffic to
+		- If any traffic violates the policies and rules the IPS can be configured to respond rather than simply
+		alerting you
+
+		- NIPS and HIPS (network/host) are availible
+		- HIPS probably more effective
+		- But dont rely on signatures
+			- use anomaly detection
+		- create local policies
+		- user central reporting and admin
+		- can be tricky to configure and "train"
+
+	Snort
+		- free flexible NIDS
+		- libpcap-based packet sniffer/logger
+		- features rules based on logging#
+		- can perform content searching/matching in addition to being used to detect a variety
+		of other attacks and probes
+			-inc buffer overflows and stealth scans
+
+		- works in realtime, generates logs and alerts
+		- multiplatform
+		- Large knowledge base online
+		
+
+--EOF--

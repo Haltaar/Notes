@@ -1,0 +1,347 @@
+	
+Thu  6 Oct 14:20:32 BST 2016
+
+	understand motivations behind computer offenses as well as methods
+
+	
+
+Thu 27 Oct 11:05:21 BST 2016
+
+	directory entries contain inodes, inodes contain metadata/atributes, 10 blocks of data
+		if file data is less that 10k, data is stored with the inode
+			past that limit, files are stored in indirect blocks
+
+			past 256k, a double indirect block is used
+				double indirect blocks are pointers to single indirect blocks (which are 256k each)
+			tripple indirect blocks point to 256 double indirect blocks
+
+	FAT filesystems are singular linked lists (causes framentation, size limits)
+
+	linux can mount multiple filesystems under different directories [which is awesome]
+
+	[read filesystem man pages and fstab man page]
+	translation lookaside buffers (TLBs) [Look this one up]
+
+	cold boot attack - dumping memory whilst machine is powered off
+
+	Current processes?
+		sudo ps aux
+	network services
+		sudo lsof -i | grep LISTEN
+	Netcoms
+		sudo netstat -pn -l
+
+	package management
+
+		[apt has super cow powers]
+		apt-get
+		apt-cache
+		apt-file	[man all of these]
+		dpkg
+
+	.deb files
+
+		primitive archive file format
+	
+		contains
+			debian-binary
+				tells the package manager what version of the package manager to use
+				allows for backwards compatability
+			control.tar.gz
+				contains control file
+					contains package information including dependencies
+					may also include recommends, suggests, conflicts, replaces, breaks, and provides
+				md5sums
+				{pre,post}{inst,rm}
+					scripts for before and after intallation and removal
+			data.tar.gz
+				compressed installation files
+
+		CD-ROMs are trusted without any GPG verification
+
+	protect BIOS
+	protect Bootloader
+	partition sensibly
+	encrypt swap space
+	monitor for open ports and connections
+	minimize running services
+	check integrety of packages
+	check integrety of pakage manager!
+
+
+Thu  3 Nov 11:41:04 GMT 2016
+	
+	IPTables
+		port knocking (port security through obscurity)
+			client must 'knock' on a series of ports in order to open a particular port (eg SSH)
+
+		Rate Limiting
+			limit amount of packets to mitigate D/DOS
+
+		[The Cuckoo's Egg - Clifford Stoll]
+		[Also Cliffor Stoll TED Talks]
+
+		
+Thu 17 Nov 10:56:32 GMT 2016
+
+	RECAP:
+		Reduce services by either:
+			Switching off services using the init system
+			removing services using the package manager
+		Protect Services by:
+			chroot jails
+			Linux cgroups
+		Protect the network services by
+			Netfilter (iptables)
+			tcpwrappers
+			fail2ban
+	
+	chmod changes the mode field in the inode data structure for a given file or directory
+
+	permissions lists
+		the traditional unix solution assumes multiple owners but a limited security requirement
+		it associates with each file
+		a fixed owner domain
+			user || group || others
+		a fixed capability list
+			read || write || search/execute
+
+	user (u) + group(g) + other(o)
+	r w x	   r w x      r w x
+
+	owner of a file can change permission with chmod command
+		chmod go-rw bar.h
+		chmod 755 bar.h (7=111=rwx, 5=101=r-x)
+	
+	can be specified (recursively) at any level
+		chmod -R go+rx barDirectory
+	
+	Special permissions
+		sticky bit (1xxx) 		> ignored on later linux kernals. Designed to store .text segment in swap.
+		Restricted deletion (1xxx)	> directory flag. Only owners of directory, or file ( + root) can delete items
+		[complete later]
+
+	chattr > Tool to change extended attributes
+	lsattr > Tool to read extended attributes
+
+		+-=[acdeijstuACDSUT]
+
+	access control lists logic
+
+	if
+		the user ID of the process is the owner, the owner entry determins access
+	else if
+		the user ID of the process matches the qualifier in one of the named user entries, this entry determines access
+	else if
+		one of the group IDs of the proccess matches the owning group, and the owning group entry contains the
+		requested permissions, this entry determines access
+	else if
+		one of the group IDs of the process matches the ualifier of one of the named group entries and this entry
+		contains the requested permissions, this entry determines access
+	else if
+		one of the group IDs of the process matches the owning group or any of the named group entriesm
+		but niether the owning group entry nor any f the mathing named group entries [complete later]
+
+	
+Thu 24 Nov 11:19:47 GMT 2016
+
+	24th Jan deadline for coursework
+
+	set up a deliberatly vulnerable system or find a vulnerability in an existing system, then develop a remediation
+	strategy 
+
+	develop a video demonstration [in the style of a defcon talk] for the exploit and the fix
+
+	video equipment is availible from the av loans system
+
+	produce a report
+
+	3 stages
+
+	stage 1: 0%  - 50% marks availible
+		find an exploit, build a system, write report that discusses the vuln and why its there, 
+		and the exploit and how it works
+
+	stage 2: 50% - 70% marks availible
+		stage 1 plus design a remediation strategy that will either reduce the likelyhood of the exploit working as
+		designed, or trigger an alarm when it occurs. Produce report detailing reasoning for approah and explaining how 
+		the fix works
+		
+	stage 3: 70% - 100% marks availible
+		implement the 
+
+	marks acieved via correctness, clarity and style; report should be concise, needs to be understandable to a 
+	technical audiance with appropriet level of detail with minimum chances for misunderstanding, quality of the
+	solution
+
+
+Thu 24 Nov 11:43:04 GMT 2016
+
+	file system integrity checking
+	
+	we have a baseline of the system, based on our trusted installation. Carefully consider the monitoring of 
+	files to determine if they have changed without your proir knowledge
+
+	intrusion detection systems
+		integreit
+		aide
+		tripwire
+	
+	or a homegrown solution which would begin by taking a baseline analysis, storing securely for later review. Test
+	against this regularly
+
+	consider an offline integrity check
+
+	cron
+
+	user customisable executable scripts inside the following directories will run at the frequency as the name suggests:
+		/etc/cron.daily
+		/etc/cron.houly
+		/etc/cron.weekly
+		/etc/cron.monthly
+
+	There may also be many cron tables, or crontab files
+		system wide > /etc/crontab
+		Individual Users > /var/spool/cron/crontables/{username}
+	user crontab must be pushed through crontab(1)
+
+	examples
+
+	#run the 'something' command every hour on the hour
+	0	*	*	*	* /sbin/something
+
+	procfs
+
+	the /proc filesystem is a special filesystem in UNIX and UNIX like OSes that presents information about processes in
+	a hierarchical filesystem.
+
+	In Linux, this filesystem is extended to include some non-process related data
+
+	files stored in the /proc filesystem are views of internal kernal structures
+
+		/proc/{pid}	>	Information about individual running processes
+		/proc/sys	>	dynamically configurable runtime kernal parameters
+
+	[processes have PID (their own ID) and PPID (their parents identity)]
+
+	[/proc/{pid}/mem is a representation of a processes current memory space. You can DD this file!]
+
+	
+Thu  8 Dec 11:09:45 GMT 2016
+
+	reliable software does what its supposed to do
+	secure software does what its supposed to to and nothing more
+
+	solution: only ever use secure software
+
+	Figuring out the solution: 
+		
+		look at the source code of every piece of software that you use
+			Highly impractical
+
+		Interfere with the kernel to create a custom solution to create a highly secure environment for your
+		software to run in
+			High maintainence and difficult to build
+
+		Or we can try something more simple and abstract
+
+	Security Issues
+		
+		1) Must not be possible to bypass the hose intrusion prevention systems
+			use linux kernal security modules
+			highest quality security mediation
+		
+		2) Misuse prevention
+			easy to manage
+			harder to secure
+			blacklist mechanism
+
+		3) anomaly prevention
+			harder to manage
+			easier to secure
+			whitelist mechanism
+	AppAromor
+
+		AppArmor is designed to allow simpler anomaly prevention
+			- the focus is on application security
+			- name based access controls to simplify management
+			- hybrid whitelist/blacklist approach
+
+		Whenever a program runs, protected by AppArmor (Regardless of UID), AppArmor will control:
+			- The POSIX capabilities (even when running UID 0)
+			- The directories and file access controls
+		
+	(setuid sets the user id that the proccess is running as. setgid for group id)
+
+	Apparmor compliments traditioninal unix permissions. Apps must have read/write/execute permissions before these
+	can be augmented with greater granularity by apparmor
+
+
+
+Thu 12 Jan 11:13:46 GMT 2017
+
+	[Tools: XRY, Encase, FTK imager/FTK, Autopsy, X-ways, win-hex]
+
+	[Reading: Nelson, B. et al Guide to Computer Forensics and Investigations 4th ed, Jones, K. et al Real Digital 
+	Forensics, Carvey, H. Windows Forensics and incident recovery]
+
+
+
+	Digital forensics requires a systematic approach (nelson et al.)
+
+		make an initial asssessment about the type of case you are involved in
+
+		determine the approach to be taken
+
+		create a detailed design
+
+		identify the resources needed
+
+		obtain and copy an evidence disk(s)
+
+		Identify the risks (risk assessment)
+
+		Manage the risk
+
+		test your design
+
+		analyse/recover the digital evidence
+
+		apply evidence to the case
+
+		write the case report
+
+		critique the investigation
+
+	"CF specialists follow clear well-defined methodologies and procedures"
+
+		Document everything
+
+		be reasonable
+		
+		"Do no harm"
+
+		Maintain chain of custody
+
+		use the correct standards and toolkits
+
+	Learn and apply the UK ACPO
+
+		1 Change nothing
+
+		2 if there is the risk of changing something, know what you are doing
+
+		3 document everything
+
+		4 there is always someone to blame
+
+	Software
+		cannot rely on utilities on suspect machine
+		need specialist software created to support forensic investigations
+
+	Hardware
+		forensic toolkits/labs include workstations, tape devices, cameras etc.
+
+	[microsystemation xry]
+
+
