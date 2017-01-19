@@ -378,4 +378,43 @@ Thu Jan 19 11:06:11 GMT 2017
         electronic hardware and storage media in order to provide evidence to support a case, civil or 
         criminal
 
-    
+    Assurances of the Forensic Expert
+        
+        No possible evidence is damaged, destroyed, or compromised by the forensics procedures used to 
+        investigate the computer (Preservation of evidence)
+        
+        No possible computer malware is introduced to the computer being investigated during the 
+        analysis process (Prevent Contamination of evidence)
+        
+        Any extrancted and possibly relevant evidence is properly handled and protected from 
+        damage (Extraction and Preservation of evidence)
+        
+        A complete documentation of the investigation procedure (Accountability of the evidence)
+        
+        Ensuring minimum interference with the normal life of the organisation
+        
+        Details of the client-attornet relationship are not disclosed in order to maintain professional 
+        ethics and legality (Ethics of investigation)
+
+    Digital Evidece
+        Any information of probative value which is stored or transmitted in digital form
+            In court terms
+                Evidence is factual proof of what did and did not happen
+        All crime (including cyber crime) can leave evidence
+
+        Examples
+            PC, Monitor, Keyboard, Mouse
+            Laptop
+            Other externally connected devices
+            Storage devices
+            Webcams
+            voip devices
+            printer
+            scanner
+            networking devices
+    Rules of evidence
+        Allowable (have warrents etc.)
+        Authentic
+        Complete
+        Reliable
+        Believable 
