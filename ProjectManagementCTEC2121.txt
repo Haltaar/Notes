@@ -237,3 +237,68 @@ Tue 17 Jan 12:04:08 GMT 2017
 	Entity Diagrams
 				
 
+Thu Jan 19 17:03:44 GMT 2017
+
+    c
+    git keeps a record of changes to files so as to avoid storing the entire file (such as in svn)
+    git creates sha1 hashes for every commit
+    commits can be refered to by these handles
+    often a shorter version is used, showing only the first 7 chars of the handle
+    any corruption of the local repo can be shown by discrepencies in the sha1 hash
+
+    svn will push the entire file each time. Using git saves bandwidth
+
+
+
+
+    |Working Directory|   -> |Staging area|    ->  |git directory|
+             -->    stage files   -->      commit      -->
+
+              <------------ Checkout the project----------
+
+
+
+
+     |untracked|       |unmodified|      |modified|       |staged|
+        ->    add the file -> edit the file -> stage the file
+
+        <--remove the file--    <---------commit-------------
+
+
+
+
+
+    create and fill a repo
+
+        cd into dir
+        type git init
+            creates the repo (a .git dir)
+            you seldom neet to look in .git
+        git add.
+            period means this dir
+            adds all diles in the dir to the repo
+        git commit -m "Initial Commit"
+            make sure commit messages are meaningful and informative    [implying]
+
+
+    Clone a repo from elsewhere
+        git clone [url]
+        git clone [url] [mypath]
+            these make an exact copy of the repo from the given URL
+        git clone git://github.com/user/repo.git
+
+    
+    The repository
+        Your top-level working directory contains everything about your project
+            the working dir probably contains many subdirs 
+            one of these, .git, is the repo
+
+
+    Working with your own repo
+        a head is a reference to a commit object
+        the current head is called HEAD (all caps)
+
+    git revert HEAD~3
+        revert the changes specified in the 4th last git commit
+    git revert [hash]
+    this will restore the wd to the same as it was when the chosen commit was before, but the commits made since still exist
