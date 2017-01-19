@@ -345,3 +345,37 @@ Thu 12 Jan 11:13:46 GMT 2017
 	[microsystemation xry]
 
 
+Thu Jan 19 11:06:11 GMT 2017
+
+    Types of computer crime
+
+        Id theft                        wrongfully obtaining and using another persons personal data in 
+                                        a way that involves fraud or deception, typicallys for ecnoomic 
+                                        gain
+        hacking                         a practiec used to obtain illegal access to computer systems 
+                                        owned by others
+        computer viruses and worms      malicious software programs designed to execute unauthorized 
+                                        functions on target hardware. Often designed to spread from 
+                                        victim to victim
+        cyberstalking                   using computer systems to obtain excessive/intrusive amounts of 
+                                        information about a person, analogous to stalking in person, 
+                                        only in cyber terms
+
+        drug trafficing                 User online facilities to sell illegal substances
+        financial fraud                 tricking victim out of their money such as business opportunity 
+                                        scemes, online auctions
+        Email bombing and spamming      sending large amounts of emails to a particular email address
+        Theft of IP                     gaining access to patents, trade secrets, customer data, or any 
+                                        other confidential information
+        Software Piracy                 unauthorized copying or uploading of software, music or movies to 
+                                        the internet with the intent of selling the copied items
+        Copyright Piracy                uploading copyrighted material owned by someone else, often for 
+                                        free
+
+    What is computer forensics?
+        
+        The scientific examination and analysis of data held on, or retrieved from, computer systems or
+        electronic hardware and storage media in order to provide evidence to support a case, civil or 
+        criminal
+
+    
