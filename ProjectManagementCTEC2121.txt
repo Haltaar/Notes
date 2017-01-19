@@ -218,3 +218,22 @@ Tue 15 Nov 12:08:21 GMT 2016
 		
 		These things need describing as part of the methodology section of the paper
 		Create a spreadsheet/table of results
+
+
+Tue 17 Jan 12:04:08 GMT 2017
+
+	What is Modelling?
+		A model is a simplified sepresentation or description of a system or complex entity, especially one
+		designed to facilitate calculations and predictions
+
+		Comceptual Model - a high level representtion of the system composed of concepts (entities) and 
+		relationships between them
+
+		Logical model - a lower level, more detailed representation of the system
+
+		Physical Model - the lowest level representation of the system. Contains implementation information
+
+
+	Entity Diagrams
+				
+
