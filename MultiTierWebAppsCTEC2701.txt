@@ -782,3 +782,42 @@ Thu Jan 26 10:01:35 GMT 2017
         (some tables will still require a composite key, but do your best to eliminate them)
 
     [Higher normal forms do exist! Maybe look these up]
+
+
+
+
+Thu Jan 26 16:06:57 GMT 2017
+
+    10 steps for normalised tables
+
+        1 - Select likely entity types; identify 1 or 2 possible attribute types for each of them
+
+        2 - Select an Identifier (PK) for each of the entity types. Write down a table type for
+            each entity containing this identifier and attributes identified so far
+
+        3 - Identify relationships between the selected entity types and specify the enterprise
+            rules
+
+        4 - Sketch an E-R Diagram, adding the degree and membership class of each relationship
+
+        5 - Decompose any M:M relationships, allocating a suitable identifier to any new types thus
+            formed. Add a table type containing the identifier for these new entity types
+
+        6 - Ensure that each relationship on the diagram is repersented in the tables, either by posting
+            identifiers or by creating a table type for the relationship, as appropriate
+
+        7 - Make a list of the attributes that need to be stored. Some will have already been identified:
+            add some others to the list
+
+        8 - Allocate the attributes to table types. Ensure that the table types are normalised (to 3nf)
+
+        9 - Add an entity type and the necessary relationships to the diagram for an extra table types 
+            produced by step 8; include degrees and membership class
+
+       10 - Check the diagram for potential connection traps. Asess the significance of any traps found
+            and eliminate significant traps. To find out whether there are any significant connection traps
+            we need to check that the model supports all requirements.
+
+     Note : A model can usually be elaborated further, but keep KISS in mind. ER Modeling is an iterative
+            process, dont waste time refining your model if it is correctly normalised and functions as 
+            desired.
