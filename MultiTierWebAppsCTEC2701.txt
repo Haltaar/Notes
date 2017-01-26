@@ -727,3 +727,57 @@ Thu 12 Jan 16:12:18 GMT 2017
 		Audit trail record might contain: User ID, timestamp, table/record/column affected. old values, new values
 		Access to audit table is restricted
 		Might deter wrong doing
+
+
+Thu Jan 26 10:01:35 GMT 2017
+
+    Instead of modelling groups of attriubutes into an entity, normalisation looks at the relationships 
+    between attributes.
+
+    1st normal form: no repeating groups
+    2nd normal form: and attributes must depend on whole primary key
+    3rd normal form: and be determined directly by primary key
+
+    unf -> 1nf -> 2nf -> 3nf
+
+    Start by listing all attributes 
+    Tidy things up. give attributes a full name. Identify groups of data which repeat by adding brackets
+    There are usually shown on a form as a table or list
+
+    Find a key. A unique identifier. Best to use some kind of iterable ID number if possible.
+
+    1st normal form - remove repeating groups
+        
+        Identify each repeating group
+        For each group
+            Remove the attributes of the repeating group from the existing table. Put them in a new
+            table.
+        Place the attribute in brackets
+        As it is a new table, give it a name and add the key from the old table to link the two
+        Create a new key for the new table.
+            It is possible to use a composit key, a key made up of multiple attributes
+        Repeat this process for all repeating groups
+
+        (Generally the number of tables increases as you go through the normalisation process)
+
+
+    2nd normal form - 1nf plus removing partial functional dependencies
+        
+        Look at each table with a composite key
+        Check that each attribute can only be determined from the whole key
+        In other words, is the value of the attribute associated with just one part of the composite key?
+            If so, create a new table
+        Remove those attributes from their original table, leaving the key used for the new table as a
+        foreign key.
+
+    3rd normal form - 2nf plus remove tansitive functional dependencies
+
+        Transitive functional dependency is when an attribute is determined by a non-key attribute.
+        IE if something can be determined by another attribute within the same row, it is redundent.
+        Only those attributes that are determined solely by the primary key of a table should remain.
+
+        Once again, we create a new table for those attributes, leaving the one used to determine them
+        as a foreign key.
+        
+        (some tables will still require a composite key, but do your best to eliminate them)
+
