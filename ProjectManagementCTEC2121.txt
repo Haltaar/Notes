@@ -302,3 +302,53 @@ Thu Jan 19 17:03:44 GMT 2017
         revert the changes specified in the 4th last git commit
     git revert [hash]
     this will restore the wd to the same as it was when the chosen commit was before, but the commits made since still exist
+
+
+Tue Jan 24 12:22:34 GMT 2017
+
+    Sourcing requirements
+        Sampling
+        Questionnaires
+        Interviews
+        Research
+        Observation
+        Workshops
+        Prototyping
+
+    Non-Functional Requirements
+        Product Requirements
+            Efficiency
+                Performance
+                Space
+            Dependability
+            Usability
+            Security
+        Organizational
+            Environmental
+            Operational
+            Development
+        External
+            Regulatory
+            Ethical
+            Legislative
+                Accounting
+                Safety
+
+    User Stories are extremely useful when determining requirements. Large user stories are known as epics
+    
+    validation vs verification
+
+    verifications is doing the right thing, validation is doing it the right way
+
+    Requirements evolution
+        Initial understanding of the problem
+        initial requiremts
+        requirements walkthrough
+        changed understanding of the problem
+        changed requirements
+        requirements clarifications and organisation
+        requirements prioritisation and negotiation
+        requirements specification
+        sign-off
+
+
