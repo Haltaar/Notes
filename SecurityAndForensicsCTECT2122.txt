@@ -420,3 +420,132 @@ Thu Jan 19 11:06:11 GMT 2017
         Believable
 
 
+Thu Jan 26 10:57:34 GMT 2017
+
+    Stages of Forensic Computing incident response
+        
+        Plan - Prioritise and deliberate
+        Identify any issues (detection
+        Triage
+        Data Collection (Acquisition)
+        Examination
+        Verification
+        Reporting
+
+    Always follow ACPO guidlines
+
+    Indident response - Machine Off
+        
+        Secure and take control of the area containing the equipment.
+        Move people away from any computers and power supplies (Accidents Happen)
+        Photograph or video the scene and all the componants. Sketches are also useful if no camera is
+        availible
+        Allow printers to finish printing - Dont stop them from potentially giving you evidence!
+        Do not, under ANY circumstaces, turn on the machine
+        Make sure it is switched off. Screensavers can be tricky, check HDD activity lights and any
+        motherboard LEDs
+        Be careful with laptops, don't accidently switch it on by opening the lid
+        Remove power sources/battery from laptops
+
+        (If a machine is off, you want to keep it off to remove the risk of remote access)
+
+        Unplug the power and other devices from fockets on the computer itself (not from the wall) [?]
+        A computer that is apparently switched off may be in sleep mode and be accessed remotely
+        Label ports and cables so the setup can be reconstructed later
+        Ensure all items have signed and completed exhibit labels attatched. (Failure to do so may create
+        difficulties with continuity and cause equipment to be rejected by forensic examiners
+
+        Search the area for diaries, notebooks, pieces of paper with passwords. (Often close to machine)
+        Consider asking the user about the system, including any passwords, if circumstances dictate
+        MAKE DETAILED NOTES OF ALL ACTIONS TAKEN
+
+    Incident response - Machine On
+
+        Secure area
+        Move people away
+        Photograph/video everything
+        Consider asking user... 
+        
+        Record what is on the screen by photographing and making written notes of content
+
+        DO NOT TOUCH THE KEYBOARD OR CLICK THE MOUSE. If the screen is blank or a screensaver present, 
+        the case officer should decide if they wish to restore the screen. If so, a short movement of the 
+        mouse should be enough.
+        If the screen restores, photograph etc. If password protection is revealed, continue as below 
+        with no further interaction with the machine 
+
+        Where possible, collect any volitile data (Running processes, information about network state)
+        Consider advice from user/owner, but do so with caution.
+
+        Allow printers to finish etc.
+
+        If no specialist advice is availible, remove power supply from back of machine without closing 
+        programs or shutting down the machine [counter intuitive much]
+        Remove power cable from device directly (to avoid a possible UPS allowing changes to system)
+
+        make note of and remove cables etc.
+        Bag n Tag.
+
+
+    Write blockers
+        
+        A write blocker is a mandatory piece of hardware that prevents examiners writing to or altering 
+        any data present on the device. Avilible for IDE, SATA, SCSI, USB, Firewire, and Multimedia cards
+            
+            availble from:  www.forensic-computers.com
+                            www.wiebetech.com
+                            www.digitalintelligence.com
+                            www.guidancesoftware.com
+
+            Write blockers shall not allow protected drive to be altered, shall not prevent obtaining any
+            information from or about the drive, and shall not prevent operations on an unprotected drive.
+
+        Writeblockers can work in one of two ways: 
+            The tool can either deny all write attempts and report them to the OS as failures
+            The tool caches writes for the duration of the session and reports them to the OS as
+            successful, but in fact prevents the write
+
+        (You can enable write protection within windows using a registry key, but do so with care)
+
+        Hardware write blockers often include additional functionality such as monitoring or filtering
+        OS comunicates only with the write blocker, not the drive directly
+        Transfer speeds prevent greatly on interface used
+
+        Limitations
+            Any possible operations that take place inside of the storage device that are not accessible
+            or controllable via the interface are outside of the scope of writeblockers (i.e. bad sector
+            handling, wear leveling, SMART reporting etc.)
+            Write blocking does not prevent changes to the drive, only prevents our system from changing
+            changing data on drive
+
+            No tool nor tech is foolproof. Test and know your tools.
+
+            In some situations, using a writeblocker is not possible (such as live environtment forensics)
+            In such cases, thorough documentation and great care is of utmost importance
+            Hardware RAID can prevent write blocker use.
+
+            Be sure to contantly test and validate both software and hardware tools
+
+
+    Imaging tools
+           
+        Most common solutions in the UK:
+            Access Data FTK imager
+            Guidance software Encase
+            Open source tools
+            DD (standard unix/linux utility)
+            ProDiscover Basic
+            Ghost
+            SafeBack
+    
+        Most imaging tools can:
+            View evidence disks and disk-to-image files
+            make disk-to-image copies of evidence drives
+                at logical partition and physical drive level
+                can segment the image file
+            evidence drive must have hardware writeblocking device
+
+        Imaging can take a great deal of time (and remember, time is money)
+
+        Formats incldue dd (.001 format), Encase (.E01), .AFF, and .DMG
+        [Lookup the differences between formats, check use cases]
