@@ -781,3 +781,4 @@ Thu Jan 26 10:01:35 GMT 2017
         
         (some tables will still require a composite key, but do your best to eliminate them)
 
+    [Higher normal forms do exist! Maybe look these up]
