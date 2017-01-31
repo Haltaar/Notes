@@ -352,3 +352,67 @@ Tue Jan 24 12:22:34 GMT 2017
         sign-off
 
 
+
+Tue Jan 31 12:04:20 GMT 2017
+
+    Nature of Projects - Why are projects difficult to manage?
+
+        Outcomes are intangible, virtual
+        Limits of time, budget and scope
+        Various skill levels between team members
+        May be large/complex projects with many componants involving a variety of resources
+        Responsabilities are spread throughout team members
+
+
+    Planning
+        
+        Understand the goal and how to achieve it
+        Identify activities/tasks
+            List all activities and tasks to be carried out
+            Create work breakdown structure
+            Estimate how long each activity will take
+            Indicate dependenceies which activities/tasks must be completed before others can be started
+        Allocated activities to team personnel
+        Adjust the plan as necessary
+
+
+    Planning Goals
+        
+        Ensure approptiate resources will be ready when required;
+        Avoid different activities competeing for resources
+        Produce detailed schedule showing which staff carry out which activity
+        Produce detailed plan against which achievement can be measured
+        Produce timed cash flow forecast
+        Re-plan during project lifetime to correct
+
+
+    Traditional vs Agile
+
+        Detailed plan completed before moving on to         incremental and flexible plan adjusted to the
+        the next stage                                      current situation if required
+
+        Different members of team contribution to           whole team contributes to the project throughout
+        the project depends on the stage of the             the development lifecycle
+        project
+
+        low (or lack of) customer interaction               close cooperation with customer
+
+
+    Activity and product based approaches
+        
+        Activity based approach
+            List all activities
+            Subdivide project
+            Work Breakdown Structure
+            Task catalogue
+            
+            An activity based approach takes the perspective of what needs to be done
+
+        Product based approach
+            Used in PRINCE2
+            Product Breakdown Structure
+            Product Flow Diagram
+            List of Activities identified from transformations
+
+            A product based approach takes the perspective of what needs to be delivered
+    
