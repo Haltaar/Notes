@@ -559,6 +559,91 @@ Mon 12 Dec 10:59:47 GMT 2016
 		- multiplatform
 		- Large knowledge base online
 		
+Mon 16 Jan 11:04:02 GMT 2017
+
+	What is a data logger?
+		Software used to record data. Anything can be logged
+	Give 6 reasons to perform log analysis
+
+	Distinguish between pattern recognition and machine learning
+
+	compare the features of splink and graylog. Which software would you use with them
+
+
+
+	when setting up a security policy, you need to decide what you're going to log and how
+	log formats are not straightforward
+	you may be dealing with a wide range of information
+	eg if analysing an attack on a machine (for example web apps) one may log network traffic
+
+	Pattern recognition
+		selecting incoming messages
+		compare with pattern book in order to filter or handle different way
+		branch of machine learning
+			focusses on recognition of regularities in data
+
+	artificial ignorance
+		branch of machine learning that is the opposit of filter; deselecting the less than useful bits
+
+		should be a little bit intelligent; anything thats regular or common we ignore, anything novel we log
+		if for example a log that shows regular entries then suddenly doesnt then you want to know why
+
+	Application performance management
+		emphasis on performance
+
+	Log types and formats
+
+		iptables
+		snort
+			can create text files, way too slow, takes longer to write entries to log than to actually process
+			has alternitive, unified 2, create binary logs
+			trouble is you need specialist software to read
+			can write straight to database using samba
+			can write pcap files for analysis with wireshark
+			or can just send emails directly to admin
+		apache
+		dhcp
+		dns
+			dhcp and dns should be logged
+			file format is propriotary between logging software
+
+		debugging software
+			for bug reports, can auto generate changelogs (mantis)
+
+		wireshark
+			many advanced features
+				filtering by rotocol
+				graphical analysis
+
+		RabbitMQ
+			messaging system
+			client server software
+			tunnels messages between multiple platforms
+
+		greylog
+			logging client/server software with multiple features
+			messaging processing pipeline
+			search
+			dashboards
+				create reports
+			graphical analysis
+			shows trends for you
+			distributed system
+
+		splunk
+			business intelegence software
+			combines reports from productiveity, security, processing, build them all into graphics that
+			essentially assist in running a business
+
+		[if you're going to run a business of any size, you need all the analytics you can get]
+
+		Graphite
+			for metrics
+		nagios
+			for alerts
+
+		[IP tables and snort are super important right now]
+
 
 
 Mon Jan 30 11:05:38 GMT 2017
