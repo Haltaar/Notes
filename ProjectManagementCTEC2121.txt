@@ -237,3 +237,182 @@ Tue 17 Jan 12:04:08 GMT 2017
 	Entity Diagrams
 				
 
+Thu Jan 19 17:03:44 GMT 2017
+
+    c
+    git keeps a record of changes to files so as to avoid storing the entire file (such as in svn)
+    git creates sha1 hashes for every commit
+    commits can be refered to by these handles
+    often a shorter version is used, showing only the first 7 chars of the handle
+    any corruption of the local repo can be shown by discrepencies in the sha1 hash
+
+    svn will push the entire file each time. Using git saves bandwidth
+
+
+
+
+    |Working Directory|   -> |Staging area|    ->  |git directory|
+             -->    stage files   -->      commit      -->
+
+              <------------ Checkout the project----------
+
+
+
+
+     |untracked|       |unmodified|      |modified|       |staged|
+        ->    add the file -> edit the file -> stage the file
+
+        <--remove the file--    <---------commit-------------
+
+
+
+
+
+    create and fill a repo
+
+        cd into dir
+        type git init
+            creates the repo (a .git dir)
+            you seldom neet to look in .git
+        git add.
+            period means this dir
+            adds all diles in the dir to the repo
+        git commit -m "Initial Commit"
+            make sure commit messages are meaningful and informative    [implying]
+
+
+    Clone a repo from elsewhere
+        git clone [url]
+        git clone [url] [mypath]
+            these make an exact copy of the repo from the given URL
+        git clone git://github.com/user/repo.git
+
+    
+    The repository
+        Your top-level working directory contains everything about your project
+            the working dir probably contains many subdirs 
+            one of these, .git, is the repo
+
+
+    Working with your own repo
+        a head is a reference to a commit object
+        the current head is called HEAD (all caps)
+
+    git revert HEAD~3
+        revert the changes specified in the 4th last git commit
+    git revert [hash]
+    this will restore the wd to the same as it was when the chosen commit was before, but the commits made since still exist
+
+
+Tue Jan 24 12:22:34 GMT 2017
+
+    Sourcing requirements
+        Sampling
+        Questionnaires
+        Interviews
+        Research
+        Observation
+        Workshops
+        Prototyping
+
+    Non-Functional Requirements
+        Product Requirements
+            Efficiency
+                Performance
+                Space
+            Dependability
+            Usability
+            Security
+        Organizational
+            Environmental
+            Operational
+            Development
+        External
+            Regulatory
+            Ethical
+            Legislative
+                Accounting
+                Safety
+
+    User Stories are extremely useful when determining requirements. Large user stories are known as epics
+    
+    validation vs verification
+
+    verifications is doing the right thing, validation is doing it the right way
+
+    Requirements evolution
+        Initial understanding of the problem
+        initial requiremts
+        requirements walkthrough
+        changed understanding of the problem
+        changed requirements
+        requirements clarifications and organisation
+        requirements prioritisation and negotiation
+        requirements specification
+        sign-off
+
+
+
+Tue Jan 31 12:04:20 GMT 2017
+
+    Nature of Projects - Why are projects difficult to manage?
+
+        Outcomes are intangible, virtual
+        Limits of time, budget and scope
+        Various skill levels between team members
+        May be large/complex projects with many componants involving a variety of resources
+        Responsabilities are spread throughout team members
+
+
+    Planning
+        
+        Understand the goal and how to achieve it
+        Identify activities/tasks
+            List all activities and tasks to be carried out
+            Create work breakdown structure
+            Estimate how long each activity will take
+            Indicate dependenceies which activities/tasks must be completed before others can be started
+        Allocated activities to team personnel
+        Adjust the plan as necessary
+
+
+    Planning Goals
+        
+        Ensure approptiate resources will be ready when required;
+        Avoid different activities competeing for resources
+        Produce detailed schedule showing which staff carry out which activity
+        Produce detailed plan against which achievement can be measured
+        Produce timed cash flow forecast
+        Re-plan during project lifetime to correct
+
+
+    Traditional vs Agile
+
+        Detailed plan completed before moving on to         incremental and flexible plan adjusted to the
+        the next stage                                      current situation if required
+
+        Different members of team contribution to           whole team contributes to the project throughout
+        the project depends on the stage of the             the development lifecycle
+        project
+
+        low (or lack of) customer interaction               close cooperation with customer
+
+
+    Activity and product based approaches
+        
+        Activity based approach
+            List all activities
+            Subdivide project
+            Work Breakdown Structure
+            Task catalogue
+            
+            An activity based approach takes the perspective of what needs to be done
+
+        Product based approach
+            Used in PRINCE2
+            Product Breakdown Structure
+            Product Flow Diagram
+            List of Activities identified from transformations
+
+            A product based approach takes the perspective of what needs to be delivered
+    

@@ -645,4 +645,121 @@ Mon 16 Jan 11:04:02 GMT 2017
 		[IP tables and snort are super important right now]
 
 
+
+Mon Jan 30 11:05:38 GMT 2017
+
+    Vulnerability Assesment levels
+        
+        Scanning
+            Using tools such as nmap/zenmap, spidering tools, figure out what is where
+        Automated Probes
+            Using a tool [scripts] that automatically performs recon (Burp, Zap, Ekinetics). Enter IP and go
+        Penetreation Test
+            Involves People. Not only can they find existing vulns they can find new ones. Taylor made reports 
+            based on the system used 
+        Physical Test
+            Social Engineering, physical penetration. AFK stuff.
+
+
+    Black Box vs White Box
+
+        Black Box
+            No prior knowledge, blind
+            emulates external attacker
+        White Box
+            Complete knowledge of infrastructure
+            Full disclosure
+            Emulates inside job
+        Grey Box
+            Somewhere in between
+
+
+    Rationale
+
+        A pentest should be carried out on any computer system that is to be deployed in a hostile environment
+        before it is deployed. In particular, any internet facing site
+        Provides a level of practical assurance that any malicious user will not be able to penetrate the system
+
+    
+    Risks
+
+        Invaluable rechnique to any organisations information security program
+        White box testing is often done as a fully automated inexpensive process
+        Black box penetration testing is labour-intensive - requires expertise to minimise risks
+        Testing may slow organisations network's response time
+        Systems may be damaged in the course of the testing - use qualified and experianced testers
+
+
+    Penetration testing execution standards
+
+        PTES  Methodology
+
+            Pre-Engagement
+            Intelligence Gathering
+            Threat Modelling
+            Vulnerability Analysis
+            Exploitation
+            Post Exploitation
+            Reporting
+        
+            The guide does not provide technical guidlines for executing a pentest
+            Need to adapt these for a particular organisation
+
+        NIST
+            
+            National Institute os Standards and Technology
+            Planning Discovery Attack Reporting
+
+
+    Pentesting - Planning
+        
+        Rules are identified
+        Management approval finalised and documented
+        Testing goals are set
+        Sets the groundwork for successful penetration test
+        No actual testing occurs in this phase
+
+    Pentesting - Discovery
+
+        Two parts
+            Start of actual testing
+                Information gathering and scanning
+                Network port and service identification
+        
+        Information Gathering
+            Host name / IP information
+            employee names and contact information
+            system information such as names and shares
+            application and service information
+            dumpster diving
+            physical walkthroughs of facilities
+            may also uncover additional information to be used during the penetration test (passwords written 
+            on paper
+
+        Vulnerability Analysis
+            Involves comparing the services, applications and operating systems of scanned hosts against 
+            vulnerability databases
+                Process that is automatic for vulnerability scanners
+                Testers own knowledge of vulnerabilities
+
+    Pentesting - Attack
+
+        Gaining access, Escalating Privileges, System Browsing, Install additional tools (repeat)
+
+        Exploits discovered vulnerabilities to confirm their existence
+
+        Heart of any pentest
+        
+        Successful attack verifies vulnerabilities
+            safeguards identified to mitigate associated security exposure
+        
+        In many cases, exploits tat are executed do not grant the maximum level of potential access to an attacker
+        
+        May instead result in the testers learning more about the targeted network and its potential 
+        vulnerabilities or induce change in the state of the targeted networks security
+        
+        Some exploits enable testers to escalate their privileges on the system or network to gain access to 
+        additional resources
+
+
 --EOF--

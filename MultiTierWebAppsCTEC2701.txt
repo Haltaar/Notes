@@ -727,3 +727,97 @@ Thu 12 Jan 16:12:18 GMT 2017
 		Audit trail record might contain: User ID, timestamp, table/record/column affected. old values, new values
 		Access to audit table is restricted
 		Might deter wrong doing
+
+
+Thu Jan 26 10:01:35 GMT 2017
+
+    Instead of modelling groups of attriubutes into an entity, normalisation looks at the relationships 
+    between attributes.
+
+    1st normal form: no repeating groups
+    2nd normal form: and attributes must depend on whole primary key
+    3rd normal form: and be determined directly by primary key
+
+    unf -> 1nf -> 2nf -> 3nf
+
+    Start by listing all attributes 
+    Tidy things up. give attributes a full name. Identify groups of data which repeat by adding brackets
+    There are usually shown on a form as a table or list
+
+    Find a key. A unique identifier. Best to use some kind of iterable ID number if possible.
+
+    1st normal form - remove repeating groups
+        
+        Identify each repeating group
+        For each group
+            Remove the attributes of the repeating group from the existing table. Put them in a new
+            table.
+        Place the attribute in brackets
+        As it is a new table, give it a name and add the key from the old table to link the two
+        Create a new key for the new table.
+            It is possible to use a composit key, a key made up of multiple attributes
+        Repeat this process for all repeating groups
+
+        (Generally the number of tables increases as you go through the normalisation process)
+
+
+    2nd normal form - 1nf plus removing partial functional dependencies
+        
+        Look at each table with a composite key
+        Check that each attribute can only be determined from the whole key
+        In other words, is the value of the attribute associated with just one part of the composite key?
+            If so, create a new table
+        Remove those attributes from their original table, leaving the key used for the new table as a
+        foreign key.
+
+    3rd normal form - 2nf plus remove tansitive functional dependencies
+
+        Transitive functional dependency is when an attribute is determined by a non-key attribute.
+        IE if something can be determined by another attribute within the same row, it is redundent.
+        Only those attributes that are determined solely by the primary key of a table should remain.
+
+        Once again, we create a new table for those attributes, leaving the one used to determine them
+        as a foreign key.
+        
+        (some tables will still require a composite key, but do your best to eliminate them)
+
+    [Higher normal forms do exist! Maybe look these up]
+
+
+
+
+Thu Jan 26 16:06:57 GMT 2017
+
+    10 steps for normalised tables
+
+        1 - Select likely entity types; identify 1 or 2 possible attribute types for each of them
+
+        2 - Select an Identifier (PK) for each of the entity types. Write down a table type for
+            each entity containing this identifier and attributes identified so far
+
+        3 - Identify relationships between the selected entity types and specify the enterprise
+            rules
+
+        4 - Sketch an E-R Diagram, adding the degree and membership class of each relationship
+
+        5 - Decompose any M:M relationships, allocating a suitable identifier to any new types thus
+            formed. Add a table type containing the identifier for these new entity types
+
+        6 - Ensure that each relationship on the diagram is repersented in the tables, either by posting
+            identifiers or by creating a table type for the relationship, as appropriate
+
+        7 - Make a list of the attributes that need to be stored. Some will have already been identified:
+            add some others to the list
+
+        8 - Allocate the attributes to table types. Ensure that the table types are normalised (to 3nf)
+
+        9 - Add an entity type and the necessary relationships to the diagram for an extra table types 
+            produced by step 8; include degrees and membership class
+
+       10 - Check the diagram for potential connection traps. Asess the significance of any traps found
+            and eliminate significant traps. To find out whether there are any significant connection traps
+            we need to check that the model supports all requirements.
+
+     Note : A model can usually be elaborated further, but keep KISS in mind. ER Modeling is an iterative
+            process, dont waste time refining your model if it is correctly normalised and functions as 
+            desired.
