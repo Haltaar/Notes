@@ -1,0 +1,141 @@
+Thu Feb  2 15:53:45 GMT 2017
+
+[PHP feels like C, written by C devs, in C]
+
+    Data Structures
+        Storing data for use and reuse
+
+    Outputting text
+
+        Echo and print
+            
+            Single echo statement
+                
+            Print & print_r
+
+            var_dump($data [,true])
+
+    [php.net, home of all things php]
+
+    Operators
+        
+        Same as in C or other C like languages
+
+        Arithmetic
+            + - / * %
+
+        Bitwise
+            & | ^ << >>
+
+        Comparison
+            < > == != <= >= <=> === !==
+
+                (===/!== is type equality)
+
+        Error Control
+            @
+
+        Execution Operators
+            `
+
+        Increment/Decrement
+            ++ --
+
+        Logical Operators
+            && || and or
+
+        String Operators
+            . .=
+
+        Array Operators
+            + == === != <> !==
+
+        Types Operators
+            instanceof
+
+
+    Data Types
+        
+        Four scalar types
+            Boolean
+            Integer
+            Float
+            String
+
+        Two compound types
+            Array
+            Object
+
+        Two special types
+            resource
+            NULL
+
+
+    Variables
+        Weakly Typed
+        Case sensitive
+
+
+        Assign by reference
+
+            $foo = 'bob';
+            $bar = &$foo;
+            $bar = 'alice;
+            # $foo is changed to alice also
+    
+
+    Arrays
+
+        Elements in arrays don't exist until created.
+
+        $array = [];
+        $array[1] = foo;
+        $array[3] = bar;
+
+        here, $array[2] does not exist and attempts to access it (such as a for loop) will result in fatal error
+
+        Array elements can be named, and elements of differing types can coexist in the same array
+
+        unset() removes an element. That element no longer exists as described above
+
+
+    If ... then... elseif... else
+        More or less the same as C
+
+
+    Switch
+        More or less the same as C
+
+
+    For
+        Identical to C
+
+
+    foreach()
+        used to trasvers arrays with elements missing
+
+            foreach (array_expression as $value)
+            
+                statement
+
+            foreach (array_expression as $key => $value)
+
+                statement
+
+
+    while()
+        same as C
+
+
+    do_while()
+
+        do {
+            statement;
+        } while (condition);
+
+
+    goto
+        don't
+
+
+

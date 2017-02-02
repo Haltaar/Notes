@@ -416,3 +416,11 @@ Tue Jan 31 12:04:20 GMT 2017
 
             A product based approach takes the perspective of what needs to be delivered
     
+
+Wed Feb  1 12:54:24 GMT 2017
+
+    Git commands
+
+        git diff        - shows differences between files in wd and repo
+        git rm          - removes file from repo and wd
+            --cached    - removes only from repo, keeps in wd
