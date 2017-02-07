@@ -424,3 +424,77 @@ Wed Feb  1 12:54:24 GMT 2017
         git diff        - shows differences between files in wd and repo
         git rm          - removes file from repo and wd
             --cached    - removes only from repo, keeps in wd
+
+
+
+Tue Feb  7 12:09:19 GMT 2017
+
+    Human Resource Planning
+        The ongoing, continuois process of systematic planning to ensure that stagging is sufficient, qualified,
+        and competent enough to achieve the organisations objectives. The process goal is to avoid manpower
+        shortages or surpluses and ensure the best fit employee to the task
+
+    Team structures
+        In a traditional development team, a project manager oversees individuals or small teams who work on 
+        different parts of a project independently. In agile, the team is more cohesive, with all members working
+        in tandem at all times on the project as it progresses
+
+    Employee expertise
+        It is important that the right person is working on the right job. Skills need to be well defined so that
+        the right employee can be assigned to the task. Soft skills are also important in almost every role
+        (interpersonal skills, team working, time management etc.) Leadership skills are also important in certain
+        roles; not everyone is suited to this type of work so finding the right employee is important.
+
+        More difficult to quantify is how an employee fits into a team as a person. Face to face interviews and
+        informal chats are vital in this aspect. It's difficult to get work done if your team doesnt WANT to work
+        together
+
+    Attracting relevant candidates: Recruitment
+        Personal recomendations are important. If somebody knows someone personally who they believe is a good 
+        candidate, they are often more likely to be a good fit as they may have existing rapore with the team.
+        As such recuruiting for a team from within the organisation is usually the first port of call. From there
+        it is important to advertise and recruit from the right talent pools. Relevant university courses are a
+        good start, and carreer fairs and agencies can be useful to find enthusiastic prospects.
+
+    Develop Employees: Training
+        Regular assesment is vital to ensure that each individuals performance, strengths and weaknesses are known
+        quantities. This way it is easier to identify areas where further development is needed, and training can
+        be tailored to ensure they are a good fit for the organisation. Review employees 1-2 times per year as a 
+        rule of thumb.
+
+    Employee Retention
+        Employees should have opertunities for progression in as many aspects of their carreer as possible. Those
+        who desire further responsibilities should be given the oportunity to prove themselves, and all should have
+        a clear roadmap for paygrade and carreer progression. This way you do not lose valuable employees to 
+        outside competition. In this sense carreer flexability is important to allow team members to find the role
+        most suited to them, giving them the fullest satisfaction from their work.
+
+        Include oportunities for talented individuals to further specilise or expand their roles to provide
+        greater job satisfaction. Keep individual needs in mind, work life balance is important to ensure your team
+        members are as productive as possible when you need them to be
+
+        [Maslow (1954)]
+
+        Perhaps most important is the need for fairness and percieved equality of opertunity. Provide meaningful
+        leadership and mentoring, and get to know employees personally. Having a positive work environment does
+        wonders for productivity.
+
+        "Treating people right is the fundamental key to creating organisational effectiveness [...] Both
+        organisations and individuals need to succeed. One cannot succeed without the other" - Lawler, 2003
+
+    Organising work
+        Ensure goals and expectations are simple, clear and well defined. Group tasks together in a way that makes 
+        sense, and ensure that everyone knows where their role fits into the wider picture. Ensure that 
+        individuals/teams do not get isolated; co-operation is vital. Whilst a clear well defined plan is 
+        essential, it needs to be felxible enough to accomadate unexpected changes and the needs of the team
+        members.
+
+    Leadership
+        The most important resource as a leader is motivation, both your own and that of your team. In this vein it
+        is important to keep goals realistic and acchievable, otherwise people get disheartened when faced with a 
+        seamingly insurmountable task. Make sure to reward those who do well and work with those who are falling
+        behind to bring them back up to speed.
+
+        Be aware of leadership style. The best style can vary wildly depending on setting, task, and team members.
+
+        Ensure there is a clear chain of command and reporting structure
