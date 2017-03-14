@@ -762,4 +762,15 @@ Mon Jan 30 11:05:38 GMT 2017
         additional resources
 
 
+
+Mon Mar  6 11:26:54 UTC 2017
+
+    what makes a good report?
+
+    consider demographic, who is gong to be reading the report
+        most execs are accountants, not techies
+
+
+
+
 --EOF--
